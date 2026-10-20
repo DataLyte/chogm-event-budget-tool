@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHOGM Event Budget Tool</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>CHOGM Event Budget Tool</h1>
+    <p>Learning prototype – sample data only. Not an approved system.</p>
+  </header>
+
+  <main>
+
+    <!-- SUMMARY BOXES -->
+    <section id="summary">
+      <h2>Summary</h2>
+      <div>
+        <p>Total budget</p>
+        <p id="total-budget">£0</p>
+      </div>
+      <div>
+        <p>Total spent</p>
+        <p id="total-spent">£0</p>
+      </div>
+      <div>
+        <p>Remaining</p>
+        <p id="total-remaining">£0</p>
+      </div>
+      <div>
+        <p>Events over budget</p>
+        <p id="over-budget-count">0 of 0</p>
+      </div>
+    </section>
+
+    <!-- ADD AN EVENT FORM -->
+    <section id="add-event">
+      <h2>Add an event</h2>
+      <form id="event-form">
+
+        <h3>Event details</h3>
+        <label for="event-name">Event name</label>
+        <input type="text" id="event-name" required>
+
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">Choose a category</option>
+          <option>Venue</option>
+          <option>Catering</option>
+          <option>Security</option>
+          <option>Transport</option>
+          <option>Accommodation</option>
+          <option>Media</option>
+          <option>Other</option>
+        </select>
+
+        <label for="event-date">Date</label>
+        <input type="date" id="event-date" required>
+
+        <h3>Money (£)</h3>
+        <label for="budget">Budget</label>
+        <input type="number" id="budget" min="0" required>
+
+        <label for="actual-cost">Actual cost</label>
+        <input type="number" id="actual-cost" min="0" required>
+
+        <label for="income">Income / sponsorship (optional)</label>
+        <input type="number" id="income" min="0" value="0">
+
+        <h3>Guests</h3>
+        <label for="expected-guests">Expected guests</label>
+        <input type="number" id="expected-guests" min="1" required>
+
+        <label for="actual-guests">Actual guests</label>
+        <input type="number" id="actual-guests" min="0" required>
+
+        <button type="submit">Add event</button>
+        <button type="reset">Clear</button>
+      </form>
+    </section>
+
+    <!-- EVENTS TABLE -->
+    <section id="events">
+      <h2>Events</h2>
+      <table id="events-table">
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Budget (£)</th>
+            <th>Actual (£)</th>
+            <th>Variance</th>
+            <th>Status</th>
+            <th>Cost per guest</th>
+            <th>Attendance</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Events will appear here once JavaScript is added -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- BOTTOM BUTTONS -->
+    <section id="data-actions">
+      <button type="button" id="load-sample">Load sample data</button>
+      <button type="button" id="download-csv">Download CSV</button>
+      <button type="button" id="clear-all">Clear all</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Prototype built for the Commonwealth Events and Protocol Team. All data is fictional.</p>
+  </footer>
+
+</body>
+</html>
