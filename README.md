@@ -1,6 +1,6 @@
 # CHOGM Event Budget Tool
 
-> **Learning prototype: fictional sample data only.** This is not an approved or production system.
+> **Work placement project.** This is a learning prototype created during a work placement. It is not a real-life project or an approved Commonwealth system, and all data is fictional.
 
 A browser-based tool for planning CHOGM event budgets, tracking costs and attendance, and exporting sample data for a Power BI dashboard.
 
