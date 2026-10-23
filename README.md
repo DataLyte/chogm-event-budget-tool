@@ -47,7 +47,7 @@ The project has three linked parts:
 4. Click **Download CSV** to save the data.
 5. Open `chogm-dashboard.pbix` in Power BI Desktop to view the dashboard.
 
-Live website: *to be added once published through GitHub Pages, subject to supervisor approval.*
+Live website: https://datalyte.github.io/chogm-event-budget-tool/
 
 See the [User guide](user-guide.md) for full step-by-step instructions.
 
